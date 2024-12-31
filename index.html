@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Hero Section</title>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preload" as="image" href="https://framerusercontent.com/images/qXy55oml2Y46Da60NupDoyHX5ro.svg">
+    <!-- Retro Font: Courier New -->
+    <style>
+        /* Define global CSS variables for retro color scheme */
+        :root {
+            --background-color: #F9E1D7; /* Soft beige background */
+            --text-color: #4B4B4B; /* Dark brownish gray */
+            --cta-color: #FF4F56; /* Retro red for CTA button */
+            --social-icon-size: 2rem; /* Uniform size for social icons */
+            --border-color: #FB7DA8; /* Retro light purple border */
+        }
+
+        /* Reset styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace; /* Retro typography */
+            background-color: var(--background-color);
+            color: var(--text-color);
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Image Section */
+        .image-section {
+            text-align: center;
+        }
+
+        .image-section img {
+            height: 100px;
+            margin: 10px;
+        }
+
+        /* Hero Section Layout */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            background: #F9E1D7; /* Beige background */
+        }
+
+        /* Text Content */
+        .text-content {
+            max-width: 750px;
+            padding: 20px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 10px 0;
+            color: var(--cta-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Retro text shadow */
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #5D4E4A;
+            letter-spacing: 0.5px;
+        }
+
+        /* Call-to-Action Button */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--cta-color);
+            color: white;
+            padding: 16px 35px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 3px solid var(--cta-color); /* Retro border on button */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Video Section */
+        .video-container {
+            flex: 1;
+            background-color: var(--background-color);
+        }
+
+        .video-container iframe {
+            width: 90%;
+            height: 320px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Retro shadow on iframe */
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social-icons a {
+            font-size: var(--social-icon-size);
+            color: var(--text-color);
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-icons a:hover {
+            color: var(--cta-color);
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+
+            .video-container iframe {
+                height: 280px;
+            }
+        }
+    </style>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Image Section: Retro style images -->
+        <div class="image-section">
+            <img src="https://i.postimg.cc/Hkh15kdf/bey-removebg-preview.png" alt="Image 1">
+            <img src="https://i.postimg.cc/Sx5HR1G4/Name-removebg-preview.png" style="height: 75px;" alt="Image 2">
+            <img src="https://i.postimg.cc/qM1PVvhz/tunisgolfecarthagene-removebg-preview.png" alt="Image 3">
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <!-- Text Content -->
+        <div class="text-content">
+            <h1>Offrez de la Chaleur cet Hiver</h1>
+            <p>
+                Rejoignez notre collecte pour offrir des vêtements d'hiver à 350 familles dans le besoin. 
+                Chaque don compte pour protéger des vies du froid et apporter un peu de réconfort. 
+                Ensemble, faisons de cet hiver une saison de solidarité et d'espoir. Contribuez dès aujourd'hui !
+            </p>
+
+            <!-- Call-to-Action Button -->
+            <a href="https://3abath.github.io/donner/" class="cta-button" target="_blank" rel="noopener">
+                Donner
+            </a>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <iframe src="https://i.postimg.cc/1X9j2kyG/inter.jpg" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Social Media Icons Section -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/TunisElBey" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/interact_club_tunis_el_bey/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

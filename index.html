@@ -3,32 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Hero Section</title>
-    <link rel="preconnect" href="https://www.youtube.com">
+    <title>Teilo</title>
     <link rel="preload" as="image" href="https://framerusercontent.com/images/qXy55oml2Y46Da60NupDoyHX5ro.svg">
-    <!-- Retro Font: Courier New -->
     <style>
-        /* Define global CSS variables for retro color scheme */
         :root {
-            --background-color: #F9E1D7; /* Soft beige background */
-            --text-color: #4B4B4B; /* Dark brownish gray */
-            --cta-color: #FF4F56; /* Retro red for CTA button */
-            --social-icon-size: 2rem; /* Uniform size for social icons */
-            --border-color: #FB7DA8; /* Retro light purple border */
+            --background-color: #F9E1D7;
+            --text-color: #4B4B4B;
+            --cta-color: #FF4F56;
+            --social-icon-size: 2rem;
+            --border-color: #FB7DA8;
         }
 
-        /* Reset styles */
         body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Courier New', Courier, monospace; /* Retro typography */
+            font-family: 'Courier New', Courier, monospace;
             background-color: var(--background-color);
             color: var(--text-color);
             height: 100%;
             overflow-x: hidden;
         }
 
-        /* Image Section */
         .image-section {
             text-align: center;
         }
@@ -38,17 +33,15 @@
             margin: 10px;
         }
 
-        /* Hero Section Layout */
         .hero-section {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
             min-height: 100vh;
-            background: #F9E1D7; /* Beige background */
+            background: #F9E1D7;
         }
 
-        /* Text Content */
         .text-content {
             max-width: 750px;
             padding: 20px;
@@ -65,7 +58,7 @@
             color: var(--cta-color);
             text-transform: uppercase;
             letter-spacing: 3px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Retro text shadow */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .hero-section p {
@@ -76,7 +69,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Call-to-Action Button */
         .cta-button {
             display: inline-block;
             background-color: var(--cta-color);
@@ -87,7 +79,7 @@
             font-weight: 600;
             text-decoration: none;
             text-transform: uppercase;
-            border: 3px solid var(--cta-color); /* Retro border on button */
+            border: 3px solid var(--cta-color);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             align-self: flex-start;
@@ -98,21 +90,20 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
 
-        /* Video Section */
-        .video-container {
+        .image-container {
             flex: 1;
-            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .video-container iframe {
+        .image-container img {
             width: 90%;
-            height: 320px;
-            border: none;
+            max-width: 600px;
             border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Retro shadow on iframe */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
-        /* Social Media Icons */
         .social-icons {
             text-align: center;
             padding: 20px;
@@ -131,7 +122,6 @@
             color: var(--cta-color);
         }
 
-        /* Mobile Responsiveness */
         @media screen and (max-width: 768px) {
             .hero-section {
                 flex-direction: column;
@@ -153,17 +143,15 @@
                 padding: 10px 25px;
             }
 
-            .video-container iframe {
-                height: 280px;
+            .image-container img {
+                width: 100%;
+                height: auto;
             }
         }
     </style>
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <!-- Image Section: Retro style images -->
         <div class="image-section">
             <img src="https://i.postimg.cc/Hkh15kdf/bey-removebg-preview.png" alt="Image 1">
             <img src="https://i.postimg.cc/Sx5HR1G4/Name-removebg-preview.png" style="height: 75px;" alt="Image 2">
@@ -172,7 +160,6 @@
     </header>
 
     <main class="hero-section">
-        <!-- Text Content -->
         <div class="text-content">
             <h1>Offrez de la Chaleur cet Hiver</h1>
             <p>
@@ -180,21 +167,17 @@
                 Chaque don compte pour protéger des vies du froid et apporter un peu de réconfort. 
                 Ensemble, faisons de cet hiver une saison de solidarité et d'espoir. Contribuez dès aujourd'hui !
             </p>
-
-            <!-- Call-to-Action Button -->
             <a href="https://3abath.github.io/donner/" class="cta-button" target="_blank" rel="noopener">
                 Donner
             </a>
         </div>
 
-        <!-- Video Section -->
-        <div class="video-container">
-            <iframe src="https://i.postimg.cc/1X9j2kyG/inter.jpg" allowfullscreen></iframe>
+        <div class="image-container">
+            <img src="https://i.postimg.cc/1X9j2kyG/inter.jpg" alt="Don Image">
         </div>
     </main>
 
     <footer>
-        <!-- Social Media Icons Section -->
         <div class="social-icons">
             <a href="https://www.facebook.com/TunisElBey" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/interact_club_tunis_el_bey/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
